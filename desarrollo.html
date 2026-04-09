@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo - Catálogo de Software Libre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+</head>
+<body>
+    <!-- Background Animations -->
+    <div class="particles">
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+    </div>
+
+    <div class="circuit-lines">
+        <div class="circuit-line horizontal"></div><div class="circuit-line horizontal"></div>
+        <div class="circuit-line horizontal"></div><div class="circuit-line horizontal"></div>
+        <div class="circuit-line horizontal"></div><div class="circuit-line vertical"></div>
+        <div class="circuit-line vertical"></div><div class="circuit-line vertical"></div>
+        <div class="circuit-line vertical"></div><div class="circuit-line vertical"></div>
+    </div>
+
+    <div class="network-nodes">
+        <div class="node"></div><div class="node"></div><div class="node"></div>
+        <div class="node"></div><div class="node"></div><div class="node"></div>
+        <div class="node"></div><div class="node"></div><div class="node"></div>
+        <div class="node"></div>
+    </div>
+
+    <div class="energy-waves">
+        <div class="wave"></div><div class="wave"></div><div class="wave"></div><div class="wave"></div>
+    </div>
+
+    <div class="hexagons">
+        <div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div>
+        <div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div>
+        <div class="hexagon"></div><div class="hexagon"></div>
+    </div>
+
+    <div class="data-streams">
+        <div class="stream"></div><div class="stream"></div><div class="stream"></div>
+        <div class="stream"></div><div class="stream"></div><div class="stream"></div>
+        <div class="stream"></div><div class="stream"></div><div class="stream"></div>
+        <div class="stream"></div>
+    </div>
+
+    <div class="light-orbs">
+        <div class="orb"></div><div class="orb"></div><div class="orb"></div>
+    </div>
+
+    <div class="sparks">
+        <div class="spark"></div><div class="spark"></div><div class="spark"></div>
+        <div class="spark"></div><div class="spark"></div><div class="spark"></div>
+        <div class="spark"></div><div class="spark"></div>
+    </div>
+    <!-- End Background Animations -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-book-open"></i>
+                    <h1>Catálogo de Software Libre</h1>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="productividad.html" class="nav-link">Productividad</a>
+                    <a href="desarrollo.html" class="nav-link active">Desarrollo</a>
+                    <a href="multimedia.html" class="nav-link">Multimedia</a>
+                    <a href="sistemas.html" class="nav-link">Sistemas</a>
+                    <a href="seguridad.html" class="nav-link">Seguridad</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <!-- Energy Core Center -->
+        <div class="hero-energy-core">
+            <div class="energy-ring"></div>
+            <div class="energy-ring"></div>
+            <div class="energy-ring"></div>
+            <div class="energy-core-dot"></div>
+        </div>
+        
+        <!-- Data Lines -->
+        <div class="hero-data-lines">
+            <div class="data-line"></div>
+            <div class="data-line"></div>
+            <div class="data-line"></div>
+            <div class="data-line"></div>
+            <div class="data-line"></div>
+        </div>
+        
+        <!-- Floating Particles -->
+        <div class="hero-particles">
+            <div class="hero-particle"></div>
+            <div class="hero-particle"></div>
+            <div class="hero-particle"></div>
+            <div class="hero-particle"></div>
+            <div class="hero-particle"></div>
+            <div class="hero-particle"></div>
+            <div class="hero-particle"></div>
+            <div class="hero-particle"></div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="container">
+            <div class="page-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <h2>Software de Desarrollo</h2>
+            <p>IDEs, editores, frameworks y herramientas de programación</p>
+        </div>
+        
+        <!-- Code Decoration -->
+        <div class="hero-code-decoration">&lt;desarrollo category="dev-tools"&gt;</div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <input type="text" id="filterInput" placeholder="Filtrar software en esta categoría...">
+                <button id="addSoftwareBtn" class="btn-primary">
+                    <i class="fas fa-plus"></i> Agregar Software
+                </button>
+                <a href="index.html" class="btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Banner -->
+    <section class="info-banner">
+        <div class="container">
+            <div class="banner-content">
+                <i class="fas fa-info-circle"></i>
+                <p><strong>¿Quieres agregar software con imagen?</strong> Edita el archivo <code>data/catalog.json</code> y agrega el campo <code>"image"</code> con la URL del logo. 
+                <a href="#como-agregar-imagenes" target="_blank">Ver instrucciones</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software List -->
+    <section class="software-list">
+        <div class="container">
+            <div id="categoryList">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-book-open"></i> Catálogo de Software Libre</h3>
+                    <p>Explorando y promoviendo el uso de software libre y de código abierto.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productividad.html">Productividad</a></li>
+                        <li><a href="desarrollo.html">Desarrollo</a></li>
+                        <li><a href="multimedia.html">Multimedia</a></li>
+                        <li><a href="sistemas.html">Sistemas</a></li>
+                        <li><a href="seguridad.html">Seguridad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#about">Acerca de</a></li>
+                        <li><a href="#license">Licencia</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Catálogo de Software Libre. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add Software Modal -->
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2><i class="fas fa-plus-circle"></i> Agregar Nuevo Software</h2>
+            <form id="addSoftwareForm">
+                <div class="form-group">
+                    <label for="softwareName">Nombre del Software *</label>
+                    <input type="text" id="softwareName" required placeholder="Ej: LibreOffice">
+                </div>
+                <div class="form-group">
+                    <label for="softwareCategory">Categoría *</label>
+                    <select id="softwareCategory" required>
+                        <option value="productividad">Productividad</option>
+                        <option value="desarrollo" selected>Desarrollo</option>
+                        <option value="multimedia">Multimedia</option>
+                        <option value="sistemas">Sistemas</option>
+                        <option value="seguridad">Seguridad</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="softwareDescription">Descripción *</label>
+                    <textarea id="softwareDescription" rows="3" required placeholder="Breve descripción del software..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="softwareLicense">Licencia</label>
+                    <select id="softwareLicense">
+                        <option value="GPL">GPL</option>
+                        <option value="MIT">MIT</option>
+                        <option value="Apache 2.0">Apache 2.0</option>
+                        <option value="BSD">BSD</option>
+                        <option value="MPL">MPL</option>
+                        <option value="AGPL">AGPL</option>
+                        <option value="EPL">EPL</option>
+                        <option value="PostgreSQL">PostgreSQL</option>
+                        <option value="Otra">Otra</option>
+                    </select>
+                </div>
+
+                <!-- Image Section -->
+                <div class="image-upload-section">
+                    <label for="softwareImageURL">URL de la Imagen / Logo (opcional)</label>
+                    <input type="url" id="softwareImageURL" placeholder="https://ejemplo.com/logo.png">
+                    <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem; margin-bottom: 0;">
+                        <i class="fas fa-info-circle"></i> Pega la URL de una imagen (PNG, JPG, SVG, WebP, GIF)
+                    </p>
+                    <div id="imagePreview" class="image-preview" style="margin-top: 1rem;">
+                        <i class="fas fa-image"></i>
+                        <p>Vista previa de la imagen</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="softwareURL">URL del Sitio Web</label>
+                    <input type="url" id="softwareURL" placeholder="https://...">
+                </div>
+                <div class="form-group">
+                    <label for="softwareRepo">URL del Repositorio</label>
+                    <input type="url" id="softwareRepo" placeholder="https://github.com/...">
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="softwareFeatured">
+                        <i class="fas fa-star"></i> Marcar como destacado (aparecerá en la página principal)
+                    </label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-plus"></i> Agregar al Catálogo
+                    </button>
+                    <button type="button" class="btn-secondary cancel-modal">Cancelar</button>
+                </div>
+            </form>
+
+            <!-- Export/Import Section -->
+            <div class="export-import-section">
+                <h3><i class="fas fa-save"></i> Guardar Cambios Permanentemente</h3>
+                <p style="color: var(--text-medium); margin-bottom: 1rem; font-size: 0.9rem;">
+                    Los cambios se guardan temporalmente en esta sesión. Para hacerlos permanentes:
+                </p>
+                <div class="export-import-buttons">
+                    <button id="exportJsonBtn" class="btn-export">
+                        <i class="fas fa-download"></i> Exportar JSON
+                    </button>
+                    <div class="btn-import-wrapper">
+                        <label for="importJsonInput" class="btn-import">
+                            <i class="fas fa-upload"></i> Importar JSON
+                        </label>
+                        <input type="file" id="importJsonInput" accept=".json" style="display: none;">
+                    </div>
+                </div>
+                <p style="color: var(--text-light); margin-top: 1rem; font-size: 0.85rem;">
+                    Después de exportar, reemplaza el archivo <code>data/catalog.json</code> en tu repositorio y haz commit.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/favorites.js"></script>
+    <script src="js/scroll-animations.js"></script>
+    <script src="js/charts-filters.js"></script>
+</body>
+</html>
