@@ -1,0 +1,167 @@
+[
+    {
+        "id": 1,
+        "name": "LibreOffice",
+        "category": "productividad",
+        "description": "Suite de oficina completa con procesador de texto, hojas de cálculo, presentaciones y más.",
+        "license": "MPL",
+        "url": "https://www.libreoffice.org",
+        "repo": "https://github.com/TheDocumentFoundation/LibreOffice",
+        "featured": true,
+        "image": "https://cdn.simpleicons.org/libreoffice"
+    },
+    {
+        "id": 2,
+        "name": "GIMP",
+        "category": "multimedia",
+        "description": "Editor de imágenes y fotos profesional con herramientas avanzadas de retoque.",
+        "license": "GPL",
+        "url": "https://www.gimp.org",
+        "repo": "https://gitlab.gnome.org/GNOME/gimp",
+        "featured": true,
+        "image": "https://cdn.simpleicons.org/gimp"
+    },
+    {
+        "id": 3,
+        "name": "VSCodium",
+        "category": "desarrollo",
+        "description": "Editor de código potente con soporte para múltiples lenguajes y extensiones.",
+        "license": "MIT",
+        "url": "https://vscodium.com",
+        "repo": "https://github.com/VSCodium/vscodium",
+        "featured": true,
+        "image": "https://cdn.simpleicons.org/vscodium"
+    },
+    {
+        "id": 4,
+        "name": "Blender",
+        "category": "multimedia",
+        "description": "Software de modelado 3D, animación y edición de video profesional.",
+        "license": "GPL",
+        "url": "https://www.blender.org",
+        "repo": "https://developer.blender.org",
+        "featured": true,
+        "image": "https://cdn.simpleicons.org/blender"
+    },
+    {
+        "id": 5,
+        "name": "Apache",
+        "category": "sistemas",
+        "description": "Servidor web HTTP ampliamente utilizado, robusto y altamente configurable.",
+        "license": "Apache 2.0",
+        "url": "https://httpd.apache.org",
+        "repo": "https://github.com/apache/httpd",
+        "featured": false,
+        "image": "https://cdn.simpleicons.org/apache"
+    },
+    {
+        "id": 6,
+        "name": "PostgreSQL",
+        "category": "sistemas",
+        "description": "Sistema de gestión de bases de datos relacional avanzado y extensible.",
+        "license": "PostgreSQL",
+        "url": "https://www.postgresql.org",
+        "repo": "https://github.com/postgres/postgres",
+        "featured": true,
+        "image": "https://cdn.simpleicons.org/postgresql"
+    },
+    {
+        "id": 7,
+        "name": "ClamAV",
+        "category": "seguridad",
+        "description": "Motor antivirus de código abierto para detectar malware y amenazas.",
+        "license": "GPL",
+        "url": "https://www.clamav.net",
+        "repo": "https://github.com/Cisco-Talos/clamav",
+        "featured": false,
+        "image": "https://www.clamav.net/assets/clamav-trademark.png"
+    },
+    {
+        "id": 8,
+        "name": "Inkscape",
+        "category": "multimedia",
+        "description": "Editor de gráficos vectoriales profesional para crear ilustraciones.",
+        "license": "GPL",
+        "url": "https://inkscape.org",
+        "repo": "https://gitlab.com/inkscape/inkscape",
+        "featured": true,
+        "image": "https://cdn.simpleicons.org/inkscape"
+    },
+    {
+        "id": 9,
+        "name": "Git",
+        "category": "desarrollo",
+        "description": "Sistema de control de versiones distribuido para seguimiento de cambios.",
+        "license": "GPL",
+        "url": "https://git-scm.com",
+        "repo": "https://github.com/git/git",
+        "featured": true,
+        "image": "https://cdn.simpleicons.org/git"
+    },
+    {
+        "id": 10,
+        "name": "Thunderbird",
+        "category": "productividad",
+        "description": "Cliente de correo electrónico con calendario, contactos y mensajería.",
+        "license": "MPL",
+        "url": "https://www.thunderbird.net",
+        "repo": "https://hg.mozilla.org/comm-central",
+        "featured": false,
+        "image": "https://cdn.simpleicons.org/thunderbird"
+    },
+    {
+        "id": 11,
+        "name": "Nginx",
+        "category": "sistemas",
+        "description": "Servidor web y proxy invers de alto rendimiento y bajo consumo.",
+        "license": "BSD",
+        "url": "https://nginx.org",
+        "repo": "https://github.com/nginx/nginx",
+        "featured": false,
+        "image": "https://cdn.simpleicons.org/nginx"
+    },
+    {
+        "id": 12,
+        "name": "Wireshark",
+        "category": "seguridad",
+        "description": "Analizador de protocolos de red para captura y análisis de tráfico.",
+        "license": "GPL",
+        "url": "https://www.wireshark.org",
+        "repo": "https://github.com/wireshark/wireshark",
+        "featured": true,
+        "image": "https://cdn.simpleicons.org/wireshark"
+    },
+    {
+        "id": 13,
+        "name": "Nextcloud",
+        "category": "productividad",
+        "description": "Plataforma de colaboración y almacenamiento en la nube autohospedada.",
+        "license": "AGPL",
+        "url": "https://nextcloud.com",
+        "repo": "https://github.com/nextcloud/server",
+        "featured": true,
+        "image": "https://cdn.simpleicons.org/nextcloud"
+    },
+    {
+        "id": 14,
+        "name": "Eclipse IDE",
+        "category": "desarrollo",
+        "description": "Entorno de desarrollo integrado para Java y otros lenguajes.",
+        "license": "EPL",
+        "url": "https://www.eclipse.org",
+        "repo": "https://github.com/eclipse",
+        "featured": false,
+        "image": "https://cdn.simpleicons.org/eclipseide"
+    },
+    {
+        "id": 15,
+        "name": "Audacity",
+        "category": "multimedia",
+        "description": "Editor de audio multipista para grabar y editar sonido.",
+        "license": "GPL",
+        "url": "https://www.audacityteam.org",
+        "repo": "https://github.com/audacity/audacity",
+        "featured": false,
+        "image": "https://cdn.simpleicons.org/audacity"
+    }
+]
