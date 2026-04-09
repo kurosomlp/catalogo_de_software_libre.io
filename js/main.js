@@ -15,7 +15,16 @@ const PLACEHOLDER_IMAGE = 'images/placeholder.svg';
 // Cargar el catálogo desde el archivo JSON
 async function loadCatalog() {
     try {
-        const response = await fetch(CATALOG_URL);
+        // Cache-busting: agregar timestamp para evitar caché del navegador
+        const timestamp = Date.now();
+        const response = await fetch(`${CATALOG_URL}?t=${timestamp}`, {
+            cache: 'no-store',
+            headers: {
+                'Cache-Control': 'no-cache, no-store, must-revalidate',
+                'Pragma': 'no-cache',
+                'Expires': '0'
+            }
+        });
         if (!response.ok) {
             throw new Error('Error al cargar el catálogo');
         }

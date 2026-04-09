@@ -163,16 +163,5 @@
         "repo": "https://github.com/audacity/audacity",
         "featured": false,
         "image": "https://cdn.simpleicons.org/audacity"
-    },
-    {
-        "id": 16,
-        "name": "GCompris",
-        "category": "sistemas",
-        "description": "GCompris es un conjunto de programas educativos de alta calidad que contiene un gran número de actividades para niños entre 2 y 10 años.",
-        "license": "AGPL",
-        "url": "https://gcompris.net/",
-        "repo": "https://github.com/gcompris",
-        "featured": false,
-        "image": "https://gcompris.net/news/images/gcompris-winter.png"
     }
 ]
