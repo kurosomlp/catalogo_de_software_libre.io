@@ -1,0 +1,588 @@
+/* ============================================
+   ANIMACIONES DE FONDO FUTURISTAS
+   ============================================ */
+
+/* ============================================
+   PARTÍCULAS FLOTANTES
+   ============================================ */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color);
+    animation: floatParticle linear infinite;
+    opacity: 0;
+}
+
+.particle:nth-child(1) { left: 10%; animation-duration: 25s; animation-delay: 0s; }
+.particle:nth-child(2) { left: 20%; animation-duration: 28s; animation-delay: 2s; }
+.particle:nth-child(3) { left: 30%; animation-duration: 22s; animation-delay: 4s; }
+.particle:nth-child(4) { left: 40%; animation-duration: 26s; animation-delay: 1s; }
+.particle:nth-child(5) { left: 50%; animation-duration: 30s; animation-delay: 3s; }
+.particle:nth-child(6) { left: 60%; animation-duration: 24s; animation-delay: 5s; }
+.particle:nth-child(7) { left: 70%; animation-duration: 27s; animation-delay: 2s; }
+.particle:nth-child(8) { left: 80%; animation-duration: 23s; animation-delay: 4s; }
+.particle:nth-child(9) { left: 90%; animation-duration: 29s; animation-delay: 1s; }
+.particle:nth-child(10) { left: 15%; animation-duration: 26s; animation-delay: 3s; }
+.particle:nth-child(11) { left: 35%; animation-duration: 24s; animation-delay: 5s; }
+.particle:nth-child(12) { left: 55%; animation-duration: 28s; animation-delay: 2s; }
+.particle:nth-child(13) { left: 75%; animation-duration: 25s; animation-delay: 4s; }
+.particle:nth-child(14) { left: 85%; animation-duration: 27s; animation-delay: 1s; }
+.particle:nth-child(15) { left: 25%; animation-duration: 23s; animation-delay: 3s; }
+.particle:nth-child(16) { left: 45%; animation-duration: 31s; animation-delay: 2s; }
+.particle:nth-child(17) { left: 65%; animation-duration: 26s; animation-delay: 5s; }
+.particle:nth-child(18) { left: 5%; animation-duration: 29s; animation-delay: 1s; }
+.particle:nth-child(19) { left: 95%; animation-duration: 24s; animation-delay: 4s; }
+.particle:nth-child(20) { left: 42%; animation-duration: 27s; animation-delay: 3s; }
+
+.particle:nth-child(odd) {
+    background: var(--secondary-color);
+    box-shadow: 0 0 10px var(--secondary-color), 0 0 20px var(--secondary-color);
+}
+
+.particle:nth-child(3n) {
+    background: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color);
+    width: 3px;
+    height: 3px;
+}
+
+@keyframes floatParticle {
+    0% {
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.6;
+    }
+    90% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(-100vh) scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* ============================================
+   LÍNEAS DE CIRCUITO ANIMADAS
+   ============================================ */
+.circuit-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.circuit-line {
+    position: absolute;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    opacity: 0.1;
+}
+
+.circuit-line.horizontal {
+    height: 1px;
+    width: 200px;
+    animation: moveHorizontal 15s linear infinite;
+}
+
+.circuit-line.vertical {
+    width: 1px;
+    height: 200px;
+    background: linear-gradient(180deg, transparent, var(--secondary-color), transparent);
+    animation: moveVertical 18s linear infinite;
+}
+
+.circuit-line:nth-child(1) { top: 15%; animation-duration: 20s; }
+.circuit-line:nth-child(2) { top: 35%; animation-duration: 25s; animation-delay: 3s; }
+.circuit-line:nth-child(3) { top: 55%; animation-duration: 22s; animation-delay: 5s; }
+.circuit-line:nth-child(4) { top: 75%; animation-duration: 28s; animation-delay: 2s; }
+.circuit-line:nth-child(5) { top: 90%; animation-duration: 24s; animation-delay: 4s; }
+.circuit-line:nth-child(6) { left: 20%; animation-duration: 26s; animation-delay: 1s; }
+.circuit-line:nth-child(7) { left: 40%; animation-duration: 23s; animation-delay: 6s; }
+.circuit-line:nth-child(8) { left: 60%; animation-duration: 27s; animation-delay: 3s; }
+.circuit-line:nth-child(9) { left: 80%; animation-duration: 21s; animation-delay: 5s; }
+.circuit-line:nth-child(10) { left: 95%; animation-duration: 29s; animation-delay: 2s; }
+
+@keyframes moveHorizontal {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.15;
+    }
+    90% {
+        opacity: 0.15;
+    }
+    100% {
+        transform: translateX(calc(100vw + 200px));
+        opacity: 0;
+    }
+}
+
+@keyframes moveVertical {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.15;
+    }
+    90% {
+        opacity: 0.15;
+    }
+    100% {
+        transform: translateY(calc(100vh + 200px));
+        opacity: 0;
+    }
+}
+
+/* ============================================
+   NODOS CONECTADOS (RED NEURONAL)
+   ============================================ */
+.network-nodes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.node {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--primary-color);
+    animation: pulseNode 3s ease-in-out infinite;
+}
+
+.node::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    opacity: 0.5;
+    animation: pulseRing 3s ease-in-out infinite;
+}
+
+.node:nth-child(1) { top: 10%; left: 15%; animation-delay: 0s; }
+.node:nth-child(2) { top: 25%; left: 85%; animation-delay: 0.5s; }
+.node:nth-child(3) { top: 50%; left: 50%; animation-delay: 1s; }
+.node:nth-child(4) { top: 70%; left: 20%; animation-delay: 1.5s; }
+.node:nth-child(5) { top: 85%; left: 75%; animation-delay: 2s; }
+.node:nth-child(6) { top: 40%; left: 30%; animation-delay: 0.3s; }
+.node:nth-child(7) { top: 60%; left: 90%; animation-delay: 0.8s; }
+.node:nth-child(8) { top: 20%; left: 55%; animation-delay: 1.3s; }
+.node:nth-child(9) { top: 75%; left: 45%; animation-delay: 1.8s; }
+.node:nth-child(10) { top: 95%; left: 10%; animation-delay: 2.3s; }
+
+.node:nth-child(odd) {
+    background: var(--secondary-color);
+    box-shadow: 0 0 15px var(--secondary-color);
+}
+
+.node:nth-child(3n) {
+    background: var(--accent-color);
+    box-shadow: 0 0 15px var(--accent-color);
+    width: 8px;
+    height: 8px;
+}
+
+@keyframes pulseNode {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+}
+
+@keyframes pulseRing {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* ============================================
+   ONDAS DE ENERGÍA
+   ============================================ */
+.energy-waves {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    opacity: 0;
+    animation: expandWave 8s ease-out infinite;
+}
+
+.wave:nth-child(1) { animation-delay: 0s; }
+.wave:nth-child(2) { animation-delay: 2s; }
+.wave:nth-child(3) { animation-delay: 4s; }
+.wave:nth-child(4) { animation-delay: 6s; }
+
+.wave:nth-child(odd) {
+    border-color: var(--secondary-color);
+}
+
+@keyframes expandWave {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.8;
+    }
+    100% {
+        width: 150vw;
+        height: 150vw;
+        opacity: 0;
+    }
+}
+
+/* ============================================
+   GRID TECNOLÓGICO ANIMADO
+   ============================================ */
+.tech-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.05;
+    background-image: 
+        linear-gradient(var(--primary-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--primary-color) 1px, transparent 1px);
+    background-size: 80px 80px;
+    animation: gridScroll 20s linear infinite;
+}
+
+@keyframes gridScroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(80px, 80px);
+    }
+}
+
+/* ============================================
+   HEXÁGONOS FLOTANTES
+   ============================================ */
+.hexagons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.hexagon {
+    position: absolute;
+    width: 60px;
+    height: 69px;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    opacity: 0.1;
+    animation: floatHexagon linear infinite;
+}
+
+.hexagon:nth-child(1) { left: 5%; animation-duration: 30s; animation-delay: 0s; }
+.hexagon:nth-child(2) { left: 25%; animation-duration: 35s; animation-delay: 5s; }
+.hexagon:nth-child(3) { left: 45%; animation-duration: 32s; animation-delay: 3s; }
+.hexagon:nth-child(4) { left: 65%; animation-duration: 38s; animation-delay: 7s; }
+.hexagon:nth-child(5) { left: 85%; animation-duration: 33s; animation-delay: 2s; }
+.hexagon:nth-child(6) { left: 15%; animation-duration: 36s; animation-delay: 8s; }
+.hexagon:nth-child(7) { left: 55%; animation-duration: 31s; animation-delay: 4s; }
+.hexagon:nth-child(8) { left: 75%; animation-duration: 34s; animation-delay: 6s; }
+
+.hexagon:nth-child(odd) {
+    border-color: var(--secondary-color);
+}
+
+.hexagon:nth-child(3n) {
+    border-color: var(--accent-color);
+    width: 40px;
+    height: 46px;
+}
+
+@keyframes floatHexagon {
+    0% {
+        transform: translateY(110vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.15;
+    }
+    90% {
+        opacity: 0.15;
+    }
+    100% {
+        transform: translateY(-10vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ============================================
+   LÍNEAS DE DATOS (DATA STREAMS)
+   ============================================ */
+.data-streams {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.stream {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, var(--primary-color), transparent);
+    animation: streamFall linear infinite;
+    opacity: 0.3;
+}
+
+.stream:nth-child(1) { left: 8%; animation-duration: 3s; animation-delay: 0s; }
+.stream:nth-child(2) { left: 18%; animation-duration: 4s; animation-delay: 0.5s; }
+.stream:nth-child(3) { left: 28%; animation-duration: 3.5s; animation-delay: 1s; }
+.stream:nth-child(4) { left: 38%; animation-duration: 4.5s; animation-delay: 0.3s; }
+.stream:nth-child(5) { left: 48%; animation-duration: 3.2s; animation-delay: 0.8s; }
+.stream:nth-child(6) { left: 58%; animation-duration: 3.8s; animation-delay: 1.2s; }
+.stream:nth-child(7) { left: 68%; animation-duration: 4.2s; animation-delay: 0.6s; }
+.stream:nth-child(8) { left: 78%; animation-duration: 3.6s; animation-delay: 1.5s; }
+.stream:nth-child(9) { left: 88%; animation-duration: 4s; animation-delay: 0.2s; }
+.stream:nth-child(10) { left: 98%; animation-duration: 3.3s; animation-delay: 0.9s; }
+
+.stream:nth-child(odd) {
+    background: linear-gradient(to bottom, transparent, var(--secondary-color), transparent);
+}
+
+.stream:nth-child(3n) {
+    background: linear-gradient(to bottom, transparent, var(--accent-color), transparent);
+    width: 1px;
+}
+
+@keyframes streamFall {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.3;
+    }
+    90% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(calc(100vh + 100px));
+        opacity: 0;
+    }
+}
+
+/* ============================================
+   ORBES DE LUZ PULSANTE
+   ============================================ */
+.light-orbs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+    animation: orbFloat ease-in-out infinite;
+}
+
+.orb:nth-child(1) {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: 10%;
+    background: radial-gradient(circle, rgba(0, 245, 255, 0.3), transparent);
+    animation-duration: 15s;
+}
+
+.orb:nth-child(2) {
+    width: 400px;
+    height: 400px;
+    top: 60%;
+    right: 10%;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.3), transparent);
+    animation-duration: 18s;
+    animation-delay: 3s;
+}
+
+.orb:nth-child(3) {
+    width: 250px;
+    height: 250px;
+    bottom: 10%;
+    left: 40%;
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.2), transparent);
+    animation-duration: 20s;
+    animation-delay: 6s;
+}
+
+@keyframes orbFloat {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.5;
+    }
+    25% {
+        transform: translate(50px, -30px) scale(1.1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translate(-30px, 50px) scale(0.9);
+        opacity: 0.6;
+    }
+    75% {
+        transform: translate(30px, 30px) scale(1.05);
+        opacity: 0.65;
+    }
+}
+
+/* ============================================
+   EFECTO DE ESTRELLAS/CHISPAS
+   ============================================ */
+.sparks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.spark {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    animation: sparkFlash ease-in-out infinite;
+}
+
+.spark:nth-child(1) { top: 15%; left: 25%; animation-duration: 4s; animation-delay: 0s; }
+.spark:nth-child(2) { top: 35%; left: 75%; animation-duration: 5s; animation-delay: 1s; }
+.spark:nth-child(3) { top: 55%; left: 45%; animation-duration: 4.5s; animation-delay: 2s; }
+.spark:nth-child(4) { top: 75%; left: 15%; animation-duration: 5.5s; animation-delay: 0.5s; }
+.spark:nth-child(5) { top: 25%; left: 85%; animation-duration: 4.2s; animation-delay: 1.5s; }
+.spark:nth-child(6) { top: 65%; left: 55%; animation-duration: 5.2s; animation-delay: 2.5s; }
+.spark:nth-child(7) { top: 85%; left: 35%; animation-duration: 4.8s; animation-delay: 0.8s; }
+.spark:nth-child(8) { top: 45%; left: 95%; animation-duration: 5s; animation-delay: 1.8s; }
+
+.spark:nth-child(odd) {
+    background: var(--secondary-color);
+}
+
+.spark:nth-child(3n) {
+    background: var(--accent-color);
+    width: 4px;
+    height: 4px;
+}
+
+@keyframes sparkFlash {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: none;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(2);
+        box-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+    }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .particle,
+    .stream,
+    .spark {
+        display: none;
+    }
+    
+    .hexagon {
+        width: 40px;
+        height: 46px;
+    }
+    
+    .orb {
+        filter: blur(60px);
+    }
+    
+    .orb:nth-child(1) {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .orb:nth-child(2) {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .orb:nth-child(3) {
+        width: 150px;
+        height: 150px;
+    }
+}
